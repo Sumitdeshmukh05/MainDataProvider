@@ -42,6 +42,8 @@ public class PrintData {
 		
 		Assert.assertEquals(element.isDisplayed(), true);
 		
+		System.out.println("Iteration Executed successfully");
+		
 	}
 	
 	
