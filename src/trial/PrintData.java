@@ -51,7 +51,8 @@ public class PrintData {
 	public Object[][] getdata(){
 		
 		ReadData rd = new ReadData("C:\\Users\\E0360088\\eclipse-workspaceNew\\MainDataProvider\\DataDrivenFile.xlsx");
-		int i = rd.GetCountofRows("Sheet1");
+		int i = 0;
+		i = rd.GetCountofRows("Sheet1");
 		System.out.println("Row Count in file : "+i);
 		
 		Object[][] credentials= new Object[i][2];
@@ -59,6 +60,7 @@ public class PrintData {
 		for(int j=0; j<i; j++)
 		{
 			credentials[j][0] = rd.ReadCellData("Sheet1", j, 0);
+			
 			credentials[j][1] = rd.ReadCellData("Sheet1", j, 1);
 			
 		}

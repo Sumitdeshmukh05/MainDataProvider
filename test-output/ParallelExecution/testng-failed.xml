@@ -3,29 +3,11 @@
 <suite thread-count="2" parallel="tests" name="Failed suite [ParallelExecution]" guice-stage="DEVELOPMENT">
   <test thread-count="2" parallel="tests" name="Chrome Test1(failed)">
     <classes>
-      <class name="trial.PrintData">
-        <methods>
-          <include name="PrintD"/>
-        </methods>
-      </class> <!-- trial.PrintData -->
-    </classes>
-  </test> <!-- Chrome Test1(failed) -->
-  <test thread-count="2" parallel="tests" name="Chrome Test2(failed)">
-    <classes>
       <class name="trial.PrintData1">
         <methods>
-          <include name="PrintD"/>
+          <include name="PrintD" invocation-numbers="1"/>
         </methods>
       </class> <!-- trial.PrintData1 -->
     </classes>
-  </test> <!-- Chrome Test2(failed) -->
-  <test thread-count="2" parallel="tests" name="Chrome Test3(failed)">
-    <classes>
-      <class name="trial.PrintData2">
-        <methods>
-          <include name="PrintD"/>
-        </methods>
-      </class> <!-- trial.PrintData2 -->
-    </classes>
-  </test> <!-- Chrome Test3(failed) -->
+  </test> <!-- Chrome Test1(failed) -->
 </suite> <!-- Failed suite [ParallelExecution] -->

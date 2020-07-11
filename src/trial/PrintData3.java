@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class PrintData1 {
+public class PrintData3 {
 	
 	WebDriver driver;
 	WebElement element;
@@ -64,7 +64,7 @@ public class PrintData1 {
 	@DataProvider(name="TestData")
 	public Object[][] getdata(){
 		
-		ReadData rd = new ReadData("C:\\Users\\E0360088\\eclipse-workspaceNew\\MainDataProvider\\DataDrivenFile1.xlsx");
+		ReadData rd = new ReadData("C:\\Users\\E0360088\\eclipse-workspaceNew\\MainDataProvider\\DataDrivenFile3.xlsx");
 		int i = 0;
 		i = rd.GetCountofRows("Sheet1");
 		System.out.println("Row Count in file : "+i);

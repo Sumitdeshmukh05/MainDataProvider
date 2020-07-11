@@ -4,21 +4,17 @@
 
 	<test name="Chrome Test1">
 		<classes>
-			<class name="trial.PrintData" />
-		</classes>
-	</test>
-
-
-	<test name="Chrome Test2">
-		<classes>
 			<class name="trial.PrintData1" />
 		</classes>
 	</test>
-
-
-	<test name="Chrome Test3">
+	<test name="Chrome Test2">
 		<classes>
 			<class name="trial.PrintData2" />
+		</classes>
+	</test>
+	<test name="Chrome Test3">
+		<classes>
+			<class name="trial.PrintData3" />
 		</classes>
 	</test>
 

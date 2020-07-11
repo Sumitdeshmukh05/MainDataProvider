@@ -1,15 +1,21 @@
 package trial;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PrintData2 {
 	
@@ -17,10 +23,18 @@ public class PrintData2 {
 	WebElement element;
 	
 	@Test(dataProvider = "TestData")
-	public void PrintD(String id, String pass) throws InterruptedException{
+	public void PrintD(String id, String pass) throws InterruptedException, MalformedURLException{
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\E0360088\\eclipse-workspaceNew\\MainDataProvider\\chromedriver.exe");
-		driver = new ChromeDriver();
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\E0360088\\eclipse-workspaceNew\\MainDataProvider\\chromedriver.exe");
+//		driver = new ChromeDriver();
+		
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		capabilities.setBrowserName("chrome");
+		
+		WebDriverManager.chromedriver().setup();
+		driver = new RemoteWebDriver(new URL("http://192.168.1.101:4444/wd/hub"), capabilities);
+		
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -51,7 +65,8 @@ public class PrintData2 {
 	public Object[][] getdata(){
 		
 		ReadData rd = new ReadData("C:\\Users\\E0360088\\eclipse-workspaceNew\\MainDataProvider\\DataDrivenFile2.xlsx");
-		int i = rd.GetCountofRows("Sheet1");
+		int i = 0;
+		i = rd.GetCountofRows("Sheet1");
 		System.out.println("Row Count in file : "+i);
 		
 		Object[][] credentials= new Object[i][2];
@@ -59,6 +74,7 @@ public class PrintData2 {
 		for(int j=0; j<i; j++)
 		{
 			credentials[j][0] = rd.ReadCellData("Sheet1", j, 0);
+			
 			credentials[j][1] = rd.ReadCellData("Sheet1", j, 1);
 			
 		}

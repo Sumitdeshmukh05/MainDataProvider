@@ -40,7 +40,6 @@ public class ReadData
 	{
 		sheet = wb.getSheet(SheetName);
 		String Data = sheet.getRow(row).getCell(column).getStringCellValue();
-				
 		return Data;
 	
 	}
