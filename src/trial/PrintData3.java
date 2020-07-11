@@ -5,9 +5,12 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -28,11 +31,16 @@ public class PrintData3 {
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\E0360088\\eclipse-workspaceNew\\MainDataProvider\\chromedriver.exe");
 //		driver = new ChromeDriver();
 		
-		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		capabilities.setBrowserName("chrome");
+//		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+//		capabilities.setBrowserName("chrome");
+//		WebDriverManager.chromedriver().setup();
+//		driver = new RemoteWebDriver(new URL("http://192.168.1.101:4444/wd/hub"), capabilities);
 		
-		WebDriverManager.chromedriver().setup();
-		driver = new RemoteWebDriver(new URL("http://192.168.1.101:4444/wd/hub"), capabilities);
+		ChromeOptions cap = new ChromeOptions(); 
+		cap.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR,
+		                  UnexpectedAlertBehaviour.IGNORE);
+
+		driver = new RemoteWebDriver(new URL("http://192.168.1.100:4444/wd/hub"),cap);
 		
 		
 		driver.manage().window().maximize();
