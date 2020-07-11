@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-11T16:54:54 IST" name="Default suite" finished-at="2020-07-11T16:57:03 IST" duration-ms="128784">
+  <suite started-at="2020-07-11T11:28:55Z" name="Suite" finished-at="2020-07-11T11:31:07Z" duration-ms="132105">
     <groups>
     </groups>
-    <test started-at="2020-07-11T16:54:54 IST" name="Default test" finished-at="2020-07-11T16:57:03 IST" duration-ms="128784">
+    <test started-at="2020-07-11T11:28:55Z" name="Test" finished-at="2020-07-11T11:31:07Z" duration-ms="132105">
       <class name="trial.PrintData">
-        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@56de5251]" started-at="2020-07-11T16:54:55 IST" name="PrintD" data-provider="TestData" finished-at="2020-07-11T16:55:33 IST" duration-ms="37689" status="PASS">
+        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@6200f9cb]" started-at="2020-07-11T16:58:56Z" name="PrintD" data-provider="TestData" finished-at="2020-07-11T16:59:30Z" duration-ms="34129" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrintD -->
-        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@56de5251]" started-at="2020-07-11T16:55:33 IST" name="PrintD" data-provider="TestData" finished-at="2020-07-11T16:55:50 IST" duration-ms="17584" status="PASS">
+        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@6200f9cb]" started-at="2020-07-11T16:59:30Z" name="PrintD" data-provider="TestData" finished-at="2020-07-11T16:59:45Z" duration-ms="15462" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrintD -->
-        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@56de5251]" started-at="2020-07-11T16:55:50 IST" name="PrintD" data-provider="TestData" finished-at="2020-07-11T16:56:08 IST" duration-ms="17659" status="PASS">
+        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@6200f9cb]" started-at="2020-07-11T16:59:45Z" name="PrintD" data-provider="TestData" finished-at="2020-07-11T17:00:00Z" duration-ms="14798" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrintD -->
-        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@56de5251]" started-at="2020-07-11T16:56:08 IST" name="PrintD" data-provider="TestData" finished-at="2020-07-11T16:56:27 IST" duration-ms="19605" status="PASS">
+        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@6200f9cb]" started-at="2020-07-11T17:00:00Z" name="PrintD" data-provider="TestData" finished-at="2020-07-11T17:00:19Z" duration-ms="18988" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +71,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrintD -->
-        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@56de5251]" started-at="2020-07-11T16:56:27 IST" name="PrintD" data-provider="TestData" finished-at="2020-07-11T16:56:44 IST" duration-ms="16733" status="PASS">
+        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@6200f9cb]" started-at="2020-07-11T17:00:19Z" name="PrintD" data-provider="TestData" finished-at="2020-07-11T17:00:41Z" duration-ms="22023" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,7 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrintD -->
-        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@56de5251]" started-at="2020-07-11T16:56:44 IST" name="PrintD" data-provider="TestData" finished-at="2020-07-11T16:57:03 IST" duration-ms="19046" status="PASS">
+        <test-method signature="PrintD(java.lang.String, java.lang.String)[pri:0, instance:trial.PrintData@6200f9cb]" started-at="2020-07-11T17:00:41Z" name="PrintD" data-provider="TestData" finished-at="2020-07-11T17:01:07Z" duration-ms="26211" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,6 +104,6 @@
           </reporter-output>
         </test-method> <!-- PrintD -->
       </class> <!-- trial.PrintData -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
