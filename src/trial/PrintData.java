@@ -19,7 +19,7 @@ public class PrintData {
 	@Test(dataProvider = "TestData")
 	public void PrintD(String id, String pass) throws InterruptedException{
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\E0360088\\eclipse-workspaceNew\\CucumberTrial\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\E0360088\\eclipse-workspaceNew\\MainDataProvider\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
