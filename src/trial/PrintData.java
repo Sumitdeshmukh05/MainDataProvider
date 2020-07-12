@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class PrintData3 {
+public class PrintData {
 	
 	WebDriver driver;
 	WebElement element;
@@ -40,14 +40,6 @@ public class PrintData3 {
 		cap1.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR,
 		                  UnexpectedAlertBehaviour.IGNORE);
 		driver = new ChromeDriver(cap1);
-		
-		
-		ChromeOptions cap = new ChromeOptions(); 
-		cap.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR,
-		                  UnexpectedAlertBehaviour.IGNORE);
-
-		driver = new RemoteWebDriver(new URL("http://192.168.1.100:4444/wd/hub"),cap);
-		
 		
 		
 		driver.manage().window().maximize();

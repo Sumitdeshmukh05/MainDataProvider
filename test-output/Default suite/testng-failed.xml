@@ -5,7 +5,7 @@
     <classes>
       <class name="trial.PrintData">
         <methods>
-          <include name="PrintD"/>
+          <include name="PrintD" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- trial.PrintData -->
     </classes>
